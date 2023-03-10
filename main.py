@@ -45,7 +45,7 @@ for index, row in df.iterrows():
         for i in range(1,7):
             preStr = 'Prerequisite ' + str(i)
             pName = row[preStr]
-            if pName  != "nan":
+            if pName != "nan":
                 if pName in names:
                     pID = name_to_id(pName)
                 else:
